@@ -411,7 +411,7 @@ controlbar_offset_closed="0"
            url="ic-rl.png"
            align="center"
            edge="center"
-           x="-80"
+           x="-70"
            y="0"
            scale="1"
            
@@ -422,7 +422,7 @@ controlbar_offset_closed="0"
            url="ic-rr.png"
            align="center"
            edge="center"
-           x="100"
+           x="110"
            y="0"
            scale="1"
            
@@ -433,7 +433,7 @@ controlbar_offset_closed="0"
            url="ic-z-in.png"
            align="center"
            edge="center"
-           x="-20"
+           x="-10"
            y="0"
            scale="1"
            
@@ -444,7 +444,7 @@ controlbar_offset_closed="0"
            url="ic-zo.png"
            align="center"
            edge="center"
-           x="40"
+           x="50"
            y="0"
            scale="1"
            
@@ -835,11 +835,13 @@ calc(show_dirbuttons, device.mobile == true OR stagewidth GT 320 );
 		if(show_fsbutton, inc(rpos,40));
 		if(device.mobile,
     set(layer[skin_btn_navi].visible, true);
+	
 );
 set(layer[skin_btn_left].visible, true);
 set(layer[skin_btn_right].visible, true);
 set(layer[skin_btn_in].visible, true);
 set(layer[skin_btn_out].visible, true);
+
 	</action>
 
 
