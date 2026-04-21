@@ -42,8 +42,8 @@
 	               layout_maxwidth="100%"
 	               controlbar_width="-24"
 	               controlbar_height="40"
-	               controlbar_offset="20"
-	               controlbar_offset_closed="-40"
+	               controlbar_offset="0"
+controlbar_offset_closed="0"
 	               controlbar_overlap.no-fractionalscaling="10"
 	               controlbar_overlap.fractionalscaling="0"
 	               design_skin_images="vtourskin.png"
@@ -782,7 +782,7 @@
 		if(show_vrbutton OR plugin[webvr].mobilevr_fake_support == true, dec(cpos,24));
 		set(rpos,6);
 
-		calc(show_dirbuttons, (area.pixelwidth + 2*cpos) GT 240 );
+calc(show_dirbuttons, area.pixelwidth GT 240 );
 
 		copy(layer[skin_btn_navi].visible, show_dirbuttons);
 
@@ -829,6 +829,9 @@
 		copy(layer[skin_btn_fs].visible, show_fsbutton);
 		copy(layer[skin_btn_fs].x, rpos);
 		if(show_fsbutton, inc(rpos,40));
+		if(device.mobile,
+    set(layer[skin_btn_navi].visible, true);
+);
 	</action>
 
 
