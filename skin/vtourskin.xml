@@ -782,7 +782,7 @@
 		if(show_vrbutton OR plugin[webvr].mobilevr_fake_support == true, dec(cpos,24));
 		set(rpos,6);
 
-		calc(show_dirbuttons, (area.pixelwidth + 2*cpos) GT 320 );
+		calc(show_dirbuttons, (area.pixelwidth + 2*cpos) GT 240 );
 
 		copy(layer[skin_btn_navi].visible, show_dirbuttons);
 
