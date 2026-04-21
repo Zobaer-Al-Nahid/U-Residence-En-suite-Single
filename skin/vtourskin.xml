@@ -782,9 +782,9 @@ controlbar_offset_closed="0"
 		if(show_vrbutton OR plugin[webvr].mobilevr_fake_support == true, dec(cpos,24));
 		set(rpos,6);
 
-calc(show_dirbuttons, area.pixelwidth GT 240 );
+calc(show_dirbuttons, device.mobile == true OR stagewidth GT 320 );
 
-		copy(layer[skin_btn_navi].visible, show_dirbuttons);
+		copy(layer[skin_btn_navi].visible, true);
 
 		copy(layer[skin_btn_prev].visible, show_selbuttons);
 		copy(layer[skin_btn_next].visible, show_selbuttons);
@@ -799,7 +799,11 @@ calc(show_dirbuttons, area.pixelwidth GT 240 );
 		if(show_mapbutton, inc(lpos,40));
 
 		if(show_dirbuttons,
-			copy(layer[skin_btn_navi].x, cpos);
+			if(device.mobile,
+    set(layer[skin_btn_navi].x, 0);
+,
+    copy(layer[skin_btn_navi].x, cpos);
+);
 			inc(cpos,140);
 
 			set(layer[skin_btn_gyro].align, center);
@@ -832,6 +836,10 @@ calc(show_dirbuttons, area.pixelwidth GT 240 );
 		if(device.mobile,
     set(layer[skin_btn_navi].visible, true);
 );
+set(layer[skin_btn_left].visible, true);
+set(layer[skin_btn_right].visible, true);
+set(layer[skin_btn_in].visible, true);
+set(layer[skin_btn_out].visible, true);
 	</action>
 
 
