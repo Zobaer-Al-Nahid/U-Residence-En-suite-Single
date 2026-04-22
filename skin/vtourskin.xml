@@ -410,9 +410,11 @@ controlbar_offset_closed="0"
     <layer name="skin_btn_left"
            url="ic-rl.png"
            align="center"
-           x="-70"
+           x="-55"
+		   
+		   x.mobile="20"
+		   x.scale=".8"
 		   y="0"
-           
            scale="1"
            ondown="set(hlookat_moveforce,-1);"
            onup="set(hlookat_moveforce,0);" />
@@ -423,7 +425,8 @@ controlbar_offset_closed="0"
            x="110"
            y="0"
            scale="1"
-           
+		   x.mobile="0"
+		   x.scale=".8"
            ondown="set(hlookat_moveforce,+1);"
            onup="set(hlookat_moveforce,0);" />
 
@@ -434,7 +437,8 @@ controlbar_offset_closed="0"
            x="0"
            y="0"
            scale="1"
-           
+           x.mobile="20"
+		   x.scale=".8"
            ondown="set(fov_moveforce,-1);"
            onup="set(fov_moveforce,0);" />
 
@@ -445,6 +449,8 @@ controlbar_offset_closed="0"
            x="55"
            y="0"
            scale="1"
+		   x.mobile="20"
+		   x.scale=".8"
            ondown="set(fov_moveforce,+1);"
            onup="set(fov_moveforce,0);" />
 
