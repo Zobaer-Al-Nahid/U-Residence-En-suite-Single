@@ -404,17 +404,17 @@ controlbar_offset_closed="0"
 				<layer name="skin_btn_prev"      style="skin_base|skin_glow" crop="0|64|64|64"   align="left"        x="5"    y="0"  scale="0.5" alpha="0.5"  onclick="if(skin_settings.thumbs_loop, skin_nextscene_loop(-1), skin_nextscene(-1) );" />
 				<layer name="skin_btn_thumbs"    style="skin_base|skin_glow" crop="0|128|64|64"  align="left"        x="50"   y="0"  scale="0.5" ondown="skin_showmap(false); skin_showthumbs();" />
 				<layer name="skin_btn_map"       style="skin_base|skin_glow" crop="64|128|64|64" align="left"        x="90"   y="0"  scale="0.5" ondown="skin_showthumbs(false); skin_showmap();" visible="false" />
-				<layer name="skin_btn_navi" type="container" align="center" x="0" width="100%" height="32">
+				<layer name="skin_btn_navi" type="container" align="center"  width="100%" height="32">
 				
 				
     <layer name="skin_btn_left"
            url="ic-rl.png"
            align="center"
            edge="center"
-           x="-80"
+           x="-55"
            y="0"
            scale="1"
-           
+           scale.mobile=".5"
            ondown="set(hlookat_moveforce,-1);"
            onup="set(hlookat_moveforce,0);" />
 
@@ -422,7 +422,7 @@ controlbar_offset_closed="0"
            url="ic-rr.png"
            align="center"
            edge="center"
-           x="100"
+           x="110"
            y="0"
            scale="1"
            
@@ -433,7 +433,7 @@ controlbar_offset_closed="0"
            url="ic-z-in.png"
            align="center"
            edge="center"
-           x="-20"
+           x="0"
            y="0"
            scale="1"
            
@@ -444,7 +444,7 @@ controlbar_offset_closed="0"
            url="ic-zo.png"
            align="center"
            edge="center"
-           x="40"
+           x="55"
            y="0"
            scale="1"
            
