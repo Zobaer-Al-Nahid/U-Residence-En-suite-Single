@@ -412,8 +412,7 @@ controlbar_offset_closed="0"
            align="center"
            x="-70"
 		   y="0"
-           x.mobile="-35"
-           scale.mobile="0.8"
+           
            scale="1"
            ondown="set(hlookat_moveforce,-1);"
            onup="set(hlookat_moveforce,0);" />
@@ -424,8 +423,7 @@ controlbar_offset_closed="0"
            x="110"
            y="0"
            scale="1"
-           x.mobile="50"
-           scale.mobile=".8"
+           
            ondown="set(hlookat_moveforce,+1);"
            onup="set(hlookat_moveforce,0);" />
 
@@ -436,8 +434,7 @@ controlbar_offset_closed="0"
            x="0"
            y="0"
            scale="1"
-           x.mobile="-20"
-           scale.mobile=".8"
+           
            ondown="set(fov_moveforce,-1);"
            onup="set(fov_moveforce,0);" />
 
@@ -448,8 +445,6 @@ controlbar_offset_closed="0"
            x="55"
            y="0"
            scale="1"
-           x.mobile="20"
-           scale.mobile=".8"
            ondown="set(fov_moveforce,+1);"
            onup="set(fov_moveforce,0);" />
 
